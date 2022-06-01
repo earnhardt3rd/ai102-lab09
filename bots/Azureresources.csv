@@ -1,0 +1,9 @@
+SEP=,
+NAME,TYPE,LOCATION,
+"ai102cs","Cognitive services multi-service account","East US"
+"ai102lscqa","Language","East US"
+"ai102lscqa-as5v6w76lemcnts","Search service","East US"
+"ai102lscqa-bot","Web App Bot","Global"
+"ai102lscqa-bot","App Service plan","East US"
+"ai102lscqa-bot-cs","App Service","East US"
+"ai102lscqa-bot-nodejs","App Service","East US"
