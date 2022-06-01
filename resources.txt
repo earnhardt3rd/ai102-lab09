@@ -1,0 +1,12 @@
+URL	https://portal.azure.com/#home
+Subscription	f82471ae-8f97-493a-88fe-7b72f7e502f4
+Username	User1-23809972@cloudslice.onmicrosoft.com
+Password	Nq0Se8+!Dr
+SubscriptionToken	Subscription1
+Resource Group
+ResourceGroup1lod23809972
+Thumbnail screenshot of virtual machineLab23809972-AI-102
+
+
+Username	Student
+Password	Pa55w.rd
