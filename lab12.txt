@@ -1,0 +1,28 @@
+URL	https://portal.azure.com/#home
+Subscription	7cc38e93-746f-4e8c-81ca-670ad7dc99cf
+Username	User1-23815214@LODSPRODMCA.onmicrosoft.com
+Password	r!DqeSN80+
+SubscriptionToken	Subscription1
+
+
+Username	Student
+Password	Pa55w.rd
+
+========================================================================================
+
+KEY1:a7d5c4e475544cf9bb03f871e3f21516
+KEY2:d84fd2fdc7a044f989303b95e3503725
+
+ENDP:https://ai102lscqa.cognitiveservices.azure.com/
+
+
+https://docs.microsoft.com/en-us/learn/support/faq
+
+
+
+https://ai102lscqa.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=LearnFAQ&api-version=2021-10-01&deploymentName=production
+
+
+curl -X POST "https://ai102lscqa.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=LearnFAQ&api-version=2021-10-01&deploymentName=production" -H "Ocp-Apim-Subscription-Key: a7d5c4e475544cf9bb03f871e3f21516" -H "Content-Type: application/json" -d "{\"top\":3,\"question\":\"YOUR_QUESTION_HERE\",\"includeUnstructuredSources\":true,\"confidenceScoreThreshold\":\"YOUR_SCORE_THRESHOLD_HERE\",\"answerSpanRequest\":{\"enable\":true,\"topAnswersWithSpan\":1,\"confidenceScoreThreshold\":\"YOUR_SCORE_THRESHOLD_HERE\"},\"filters\":{\"metadataFilter\":{\"logicalOperation\":\"YOUR_LOGICAL_OPERATION_HERE\",\"metadata\":[{\"key\":\"YOUR_ADDITIONAL_PROP_KEY_HERE\",\"value\":\"YOUR_ADDITIONAL_PROP_VALUE_HERE\"}]}}}"
+
+curl -X POST "https://ai102lscqa.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=LearnFAQ&api-version=2021-10-01&deploymentName=production" -H "Ocp-Apim-Subscription-Key: a7d5c4e475544cf9bb03f871e3f21516" -H "Content-Type: application/json" -d "{\"top\":3,\"question\":\"YOUR_QUESTION_HERE\",\"includeUnstructuredSources\":true,\"confidenceScoreThreshold\":\"YOUR_SCORE_THRESHOLD_HERE\",\"answerSpanRequest\":{\"enable\":true,\"topAnswersWithSpan\":1,\"confidenceScoreThreshold\":\"YOUR_SCORE_THRESHOLD_HERE\"},\"filters\":{\"metadataFilter\":{\"logicalOperation\":\"YOUR_LOGICAL_OPERATION_HERE\",\"metadata\":[{\"key\":\"YOUR_ADDITIONAL_PROP_KEY_HERE\",\"value\":\"YOUR_ADDITIONAL_PROP_VALUE_HERE\"}]}}}"
