@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
  
  // Import namespaces
- //using Microsoft.CognitiveServices.Speech;
- //using Microsoft.CognitiveServices.Speech.Audio;
- //using Microsoft.CognitiveServices.Speech.Intent;
+ using Microsoft.CognitiveServices.Speech;
+ using Microsoft.CognitiveServices.Speech.Audio;
+ using Microsoft.CognitiveServices.Speech.Intent;
 // NO MIC
  using System.Media;
 
