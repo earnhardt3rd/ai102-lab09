@@ -167,4 +167,13 @@ else:
     print('Try asking me for the time, the day, or the date.')
 =======================================================================================
 python clock-client.py
-====================================================================================
+=======================================================================================
+
+
+
+
+ dotnet add package Microsoft.CognitiveServices.Speech --version 1.14.0
+
+
+ pip install azure-cognitiveservices-speech==1.14.0
+
