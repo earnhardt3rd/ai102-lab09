@@ -2,9 +2,13 @@
 using Newtonsoft.Json.Linq;
 using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
-
-// Import namespaces
-
+ 
+ // Import namespaces
+ //using Microsoft.CognitiveServices.Speech;
+ //using Microsoft.CognitiveServices.Speech.Audio;
+ //using Microsoft.CognitiveServices.Speech.Intent;
+// NO MIC
+ using System.Media;
 
 namespace speaking_clock_client
 {
@@ -22,13 +26,129 @@ namespace speaking_clock_client
                 string predictionRegion = configuration["LuPredictionRegion"];
                 string predictionKey = configuration["LuPredictionKey"];
                 
-                // Configure speech service and get intent recognizer
+                // NO MIC
+                    // Configure speech service and get intent recognizer
+                    // SpeechConfig speechConfig = SpeechConfig.FromSubscription(predictionKey, predictionRegion);
+                    // AudioConfig audioConfig = AudioConfig.FromDefaultMicrophoneInput();
+                    // IntentRecognizer recognizer = new IntentRecognizer(speechConfig, audioConfig);
 
+                // Configure speech service and get intent recognizer
+                string audioFile = "time-in-london.wav";
+                SoundPlayer wavPlayer = new SoundPlayer(audioFile);
+                wavPlayer.Play();
+                System.Threading.Thread.Sleep(2000);
+                SpeechConfig speechConfig = SpeechConfig.FromSubscription(predictionKey, predictionRegion);
+                AudioConfig audioConfig = AudioConfig.FromWavFileInput(audioFile);
+                IntentRecognizer recognizer = new IntentRecognizer(speechConfig, audioConfig);
 
                 // Get the model from the AppID and add the intents we want to use
+                var model = LanguageUnderstandingModel.FromAppId(luAppId);
+                recognizer.AddIntent(model, "GetTime", "time");
+                recognizer.AddIntent(model, "GetDate", "date");
+                recognizer.AddIntent(model, "GetDay", "day");
+                recognizer.AddIntent(model, "None", "none");
 
 
                 // Process speech input
+                string intent = "";
+                var result = await recognizer.RecognizeOnceAsync().ConfigureAwait(false);
+                if (result.Reason == ResultReason.RecognizedIntent)
+                {
+                    // Intent was identified
+                    intent = result.IntentId;
+                    Console.WriteLine($"Query: {result.Text}");
+                    Console.WriteLine($"Intent Id: {intent}.");
+                    string jsonResponse = result.Properties.GetProperty(PropertyId.LanguageUnderstandingServiceResponse_JsonResult);
+                    Console.WriteLine($"JSON Response:\n{jsonResponse}\n");
+                    
+                    // Get the first entity (if any)
+                    JObject jsonResults = JObject.Parse(jsonResponse);
+                    string entityType = "";
+                    string entityValue = "";
+                    if (jsonResults["entities"].HasValues)
+                    {
+                        JArray entities = new JArray(jsonResults["entities"][0]);
+                        entityType = entities[0]["type"].ToString();
+                        entityValue = entities[0]["entity"].ToString();
+                        Console.WriteLine(entityType + ": " + entityValue);
+                    }
+
+                    // Apply the appropriate action
+                    switch (intent)
+                    {
+                        case "time":
+                            var location = "local";
+                            // Check for entities
+                            if (entityType == "Location")
+                            {
+                                location = entityValue;
+                            }
+                            // Get the time for the specified location
+                            var getTimeTask = Task.Run(() => GetTime(location));
+                            string timeResponse = await getTimeTask;
+                            Console.WriteLine(timeResponse);
+                            break;
+                        case "day":
+                            var date = DateTime.Today.ToShortDateString();
+                            // Check for entities
+                            if (entityType == "Date")
+                            {
+                                date = entityValue;
+                            }
+                            // Get the day for the specified date
+                            var getDayTask = Task.Run(() => GetDay(date));
+                            string dayResponse = await getDayTask;
+                            Console.WriteLine(dayResponse);
+                            break;
+                        case "date":
+                            var day = DateTime.Today.DayOfWeek.ToString();
+                            // Check for entities
+                            if (entityType == "Weekday")
+                            {
+                                day = entityValue;
+                            }
+
+                            var getDateTask = Task.Run(() => GetDate(day));
+                            string dateResponse = await getDateTask;
+                            Console.WriteLine(dateResponse);
+                            break;
+                        default:
+                            // Some other intent (for example, "None") was predicted
+                            Console.WriteLine("You said " + result.Text.ToLower());
+                            if (result.Text.ToLower().Replace(".", "") == "stop")
+                            {
+                                intent = result.Text;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Try asking me for the time, the day, or the date.");
+                            }
+                            break;
+                    }
+                    
+                }
+                else if (result.Reason == ResultReason.RecognizedSpeech)
+                {
+                    // Speech was recognized, but no intent was identified.
+                    intent = result.Text;
+                    Console.Write($"I don't know what {intent} means.");
+                }
+                else if (result.Reason == ResultReason.NoMatch)
+                {
+                    // Speech wasn't recognized
+                    Console.WriteLine($"Sorry. I didn't understand that.");
+                }
+                else if (result.Reason == ResultReason.Canceled)
+                {
+                    // Something went wrong
+                    var cancellation = CancellationDetails.FromResult(result);
+                    Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
+                    if (cancellation.Reason == CancellationReason.Error)
+                    {
+                        Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
+                        Console.WriteLine($"CANCELED: ErrorDetails={cancellation.ErrorDetails}");
+                    }
+                }
 
 
             }
