@@ -4786,19 +4786,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Student\\.nuget\\packages\\": {}
+    "/Users/boomer/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\lab\\ai102_lab09\\AI-102-AIEngineer\\10-luis-client\\C-Sharp\\clock-client\\clock_client.csproj",
+      "projectUniqueName": "/Users/boomer/work/myAzure/ai-102/ai102-lab09/AI-102-AIEngineer/10-luis-client/C-Sharp/clock-client/clock_client.csproj",
       "projectName": "clock_client",
-      "projectPath": "C:\\lab\\ai102_lab09\\AI-102-AIEngineer\\10-luis-client\\C-Sharp\\clock-client\\clock_client.csproj",
-      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\lab\\ai102_lab09\\AI-102-AIEngineer\\10-luis-client\\C-Sharp\\clock-client\\obj\\",
+      "projectPath": "/Users/boomer/work/myAzure/ai-102/ai102-lab09/AI-102-AIEngineer/10-luis-client/C-Sharp/clock-client/clock_client.csproj",
+      "packagesPath": "/Users/boomer/.nuget/packages/",
+      "outputPath": "/Users/boomer/work/myAzure/ai-102/ai102-lab09/AI-102-AIEngineer/10-luis-client/C-Sharp/clock-client/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/boomer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -4808,6 +4812,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -4819,6 +4824,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime": {
             "target": "Package",
@@ -4843,12 +4849,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }

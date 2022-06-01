@@ -10,3 +10,8 @@ Thumbnail screenshot of virtual machineLab23809972-AI-102
 
 Username	Student
 Password	Pa55w.rd
+
+
+
+
+
