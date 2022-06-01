@@ -1,0 +1,185 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "GetDate",
+      "features": []
+    },
+    {
+      "name": "GetDay",
+      "features": []
+    },
+    {
+      "name": "GetTime",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "Location",
+      "children": [],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Weekday",
+      "subLists": [
+        {
+          "canonicalForm": "sunday",
+          "list": [
+            "sun"
+          ]
+        },
+        {
+          "canonicalForm": "monday",
+          "list": [
+            "mon"
+          ]
+        },
+        {
+          "canonicalForm": "tuesday",
+          "list": [
+            "tue"
+          ]
+        },
+        {
+          "canonicalForm": "wednesday",
+          "list": [
+            "wed"
+          ]
+        },
+        {
+          "canonicalForm": "thursday",
+          "list": [
+            "thu"
+          ]
+        },
+        {
+          "canonicalForm": "friday",
+          "list": [
+            "fri"
+          ]
+        },
+        {
+          "canonicalForm": "saturday",
+          "list": [
+            "sat"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "goodbye",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what date is it on saturday?",
+      "intent": "GetDate",
+      "entities": []
+    },
+    {
+      "text": "what date is it?",
+      "intent": "GetDate",
+      "entities": []
+    },
+    {
+      "text": "what date will it be on friday?",
+      "intent": "GetDate",
+      "entities": []
+    },
+    {
+      "text": "what day is it?",
+      "intent": "GetDay",
+      "entities": []
+    },
+    {
+      "text": "what day was 01/01/1901?",
+      "intent": "GetDay",
+      "entities": []
+    },
+    {
+      "text": "what day will it be on 12/12/2099?",
+      "intent": "GetDay",
+      "entities": []
+    },
+    {
+      "text": "what is the current time in new york?",
+      "intent": "GetTime",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 28,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "what is the date today?",
+      "intent": "GetDate",
+      "entities": []
+    },
+    {
+      "text": "what is the day today?",
+      "intent": "GetDay",
+      "entities": []
+    },
+    {
+      "text": "what is the time?",
+      "intent": "GetTime",
+      "entities": []
+    },
+    {
+      "text": "what time is it in london?",
+      "intent": "GetTime",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 19,
+          "endPos": 24,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "what time is it?",
+      "intent": "GetTime",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "Clock",
+  "desc": "Natural language Clock",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [
+    {
+      "name": "Date",
+      "regexPattern": "[0-9]{2}/[0-9]{2}/[0-9]{4}",
+      "roles": []
+    }
+  ],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}
