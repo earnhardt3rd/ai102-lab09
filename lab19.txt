@@ -131,3 +131,34 @@ Results saved in detected_faces.jpg
 
 
 -----------------------------------------------------------------------------
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api>dotnet run
+Program.cs(201,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api\analyze-faces.csproj]
+Program.cs(209,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api\analyze-faces.csproj]
+Program.cs(216,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api\analyze-faces.csproj]
+1: Detect faces
+2: Compare faces
+3: Train a facial recognition model
+4: Recognize faces
+5: Verify a face
+Any other key to quit
+Enter a number:
+2
+Comparing faces in images/person1.jpg and images/people.jpg
+ Results saved in face_to_match.jpg
+ Results saved in matched_faces.jpg
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api>
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>python analyze-faces.py
+1: Detect faces
+2: Compare faces
+3: Train a facial recognition model
+4: Recognize faces
+5: Verify a face
+Any other key to quit
+Enter a number:2
+Comparing faces in  images\person1.jpg and images\people.jpg
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>
+
+------------------------------------------------------------------------------------------------------
