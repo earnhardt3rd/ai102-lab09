@@ -115,3 +115,50 @@ PS C:\lab\ai102-lab09\AI-102-AIEngineer\16-video-indexer> c:\lab\ai102-lab09\AI-
                  }
 }
 PS C:\lab\ai102-lab09\AI-102-AIEngineer\16-video-indexer>
+
+
+
+
+================================================================
+== WORKED FROM HOME PC =============
+PS C:\fe\work\myAzure\ai-102\ai102-lab09\AI-102-AIEngineer\16-video-indexer> .\get-videos.ps1
+{
+    "results":  [
+                    {
+                        "accountId":  "2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c",
+                        "id":  "371bf2ec40",
+                        "partition":  null,
+                        "externalId":  null,
+                        "metadata":  null,
+                        "name":  "2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c-video1",
+                        "description":  null,
+                        "created":  "2022-06-02T15:09:01.514+00:00",
+                        "lastModified":  "2022-06-02T15:19:23.346+00:00",
+                        "lastIndexed":  "2022-06-02T15:09:09.579+00:00",
+                        "privacyMode":  "Private",
+                        "userName":  "Frank Earnhardt",
+                        "isOwned":  true,
+                        "isBase":  true,
+                        "hasSourceVideoFile":  true,
+                        "state":  "Processed",
+                        "moderationState":  "OK",
+                        "reviewState":  "None",
+                        "processingProgress":  "100%",
+                        "durationInSeconds":  114,
+                        "thumbnailVideoId":  "371bf2ec40",
+                        "thumbnailId":  "e95e65c3-41ac-4f2b-96c2-035a2f19ad25",
+                        "searchMatches":  "",
+                        "indexingPreset":  "Default",
+                        "streamingPreset":  "Default",
+                        "sourceLanguage":  "en-US",
+                        "sourceLanguages":  "en-US",
+                        "personModelId":  "00000000-0000-0000-0000-000000000000"
+                    }
+                ],
+    "nextPage":  {
+                     "pageSize":  25,
+                     "skip":  0,
+                     "done":  true
+                 }
+}
+PS C:\fe\work\myAzure\ai-102\ai102-lab09\AI-102-AIEngineer\16-video-indexer>
