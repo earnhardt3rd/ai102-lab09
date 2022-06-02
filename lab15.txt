@@ -178,4 +178,80 @@ Tags:
 Generating thumbnail
 
 ========================================================================================================
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\C-Sharp\image-analysis>dotnet run images/street.jpg   
+Analyzing images/street.jpg
+Description: a person walking a dog on a sidewalk (confidence: 46.96%)
+Tags:
+ -outdoor (confidence: 99.98%)
+ -road (confidence: 99.98%)
+ -building (confidence: 99.92%)
+ -street (confidence: 99.53%)
+ -land vehicle (confidence: 93.68%)
+ -way (confidence: 93.67%)
+ -dog (confidence: 93.55%)
+ -vehicle (confidence: 92.56%)
+ -car (confidence: 91.38%)
+ -sidewalk (confidence: 87.51%)
+ -city (confidence: 86.10%)
+ -wheel (confidence: 69.87%)
+ -people (confidence: 65.72%)
+ -yellow (confidence: 64.94%)
+ -carnivore (confidence: 63.83%)
+ -taxi (confidence: 60.63%)
+ -busy (confidence: 30.32%)
+ -curb (confidence: 7.65%)
+Categories:
+ -outdoor_ (confidence: 0.39%)
+ -outdoor_road (confidence: 55.86%)
+Objects in image:
+ -car (confidence: 72.40%)
+ -taxi (confidence: 77.00%)
+ -person (confidence: 78.10%)
+ -dog (confidence: 54.40%)
+  Results saved in objects.jpg
+Ratings:
+ -Adult: False
+ -Racy: False
+ -Gore: False
+Generating thumbnail
+Thumbnail saved in thumbnail.png
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\Python\image-analysis>python image-analysis.py images/street.jpg
+Analyzing images/street.jpg
+Description: 'a person walking a dog on a sidewalk' (confidence: 46.96%)
+Tags:
+ -'outdoor' (confidence: 99.98%)
+ -'road' (confidence: 99.98%)
+ -'building' (confidence: 99.92%)
+ -'street' (confidence: 99.53%)
+ -'land vehicle' (confidence: 93.68%)
+ -'way' (confidence: 93.67%)
+ -'dog' (confidence: 93.55%)
+ -'vehicle' (confidence: 92.56%)
+ -'car' (confidence: 91.38%)
+ -'sidewalk' (confidence: 87.51%)
+ -'city' (confidence: 86.10%)
+ -'wheel' (confidence: 69.87%)
+ -'people' (confidence: 65.72%)
+ -'yellow' (confidence: 64.94%)
+ -'carnivore' (confidence: 63.83%)
+ -'taxi' (confidence: 60.63%)
+ -'busy' (confidence: 30.32%)
+ -'curb' (confidence: 7.65%)
+Categories:
+ -'outdoor_' (confidence: 0.39%)
+ -'outdoor_road' (confidence: 55.86%)
+Objects in image:
+ -car (confidence: 72.40%)
+ -taxi (confidence: 77.00%)
+ -person (confidence: 78.10%)
+ -dog (confidence: 54.40%)
+  Results saved in objects.jpg
+Ratings:
+ -Adult: False
+ -Racy: False
+ -Gore: False
+Generating thumbnail
+Thumbnail saved in. thumbnail.png
+
 
