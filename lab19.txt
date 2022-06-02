@@ -11,3 +11,123 @@ AI-102
 Username	Student
 Password	Pa55w.rd
 =======================================================================
+ENDP:https://ai102cservicewfe.cognitiveservices.azure.com/
+KEY1:a6ce195713274640b4c39d7e87777e8b
+KEY2:7dfe9328cb6a4877b0c9f0f9d4acd673
+=======================================================================
+computer-vision
+
+dotnet add package Microsoft.Azure.CognitiveServices.Vision.ComputerVision --version 6.0.0
+
+pip install azure-cognitiveservices-vision-computervision==0.7.0
+-----------------------------------------------------------------------
+C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\computer-vision>dotnet run
+Analyzing images/people.jpg
+2 faces detected.
+ Results saved in detected_faces.jpg
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\computer-vision>python detect-faces.py
+Matplotlib is building the font cache; this may take a moment.
+Analyzing images\people.jpg
+2 faces detected.
+Results saved in detected_faces.jpg
+
+
+=======================================================================
+Computer Vision - Face SDK
+dotnet add package Microsoft.Azure.CognitiveServices.Vision.Face --version 2.6.0-preview.1
+
+pip install azure-cognitiveservices-vision-face==0.4.1
+
+--------------------------------------------------------------------
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api>dotnet run
+Program.cs(128,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api\analyze-faces.csproj]
+Program.cs(135,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api\analyze-faces.csproj]
+Program.cs(143,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api\analyze-faces.csproj]
+Program.cs(150,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api\analyze-faces.csproj]
+Program.cs(20,35): warning CS0649: Field 'Program.faceClient' is never assigned to, and will always have its default value null [C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api\analyze-faces.csproj]
+1: Detect faces
+2: Compare faces
+3: Train a facial recognition model
+4: Recognize faces
+5: Verify a face
+Any other key to quit
+Enter a number:
+1
+Detecting faces in images/people.jpg
+2 faces detected.
+
+Face ID: ae32bd03-74f0-4159-adcc-0c38568f1291
+ - Age: 34
+ - Emotions:
+   - [Happiness, 1]
+   - [Anger, 0]
+   - [Contempt, 0]
+   - [Disgust, 0]
+   - [Fear, 0]
+   - [Neutral, 0]
+   - [Sadness, 0]
+   - [Surprise, 0]
+ - Glasses: NoGlasses
+
+Face ID: 719e807d-55ab-4da0-b943-c69dd203d359
+ - Age: 32
+ - Emotions:
+   - [Happiness, 1]
+   - [Anger, 0]
+   - [Contempt, 0]
+   - [Disgust, 0]
+   - [Fear, 0]
+   - [Neutral, 0]
+   - [Sadness, 0]
+   - [Surprise, 0]
+ - Glasses: ReadingGlasses
+ Results saved in detected_faces.jpg
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api>
+
+
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>python analyze-faces.py
+1: Detect faces
+2: Compare faces
+3: Train a facial recognition model
+4: Recognize faces
+5: Verify a face
+Any other key to quit
+Enter a number:1
+Detecting faces in images\people.jpg
+2 faces detected.
+
+Face ID: 269632ad-895d-48a0-8e67-0962d30bd334
+ - Age: 34  
+ - Emotions:
+   - anger: 0.0
+   - contempt: 0.0
+   - disgust: 0.0
+   - fear: 0.0
+   - happiness: 1.0
+   - neutral: 0.0
+   - sadness: 0.0
+   - surprise: 0.0
+ - Glasses:noGlasses
+
+Face ID: 1589e8c1-7bb1-4124-b0ad-62b4749d3596
+ - Age: 32
+ - Emotions:
+   - anger: 0.0
+   - contempt: 0.0
+   - disgust: 0.0
+   - fear: 0.0
+   - happiness: 1.0
+   - neutral: 0.0
+   - sadness: 0.0
+   - surprise: 0.0
+ - Glasses:readingGlasses
+
+Results saved in detected_faces.jpg
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>
+
+
+-----------------------------------------------------------------------------
