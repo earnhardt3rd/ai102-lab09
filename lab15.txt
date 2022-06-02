@@ -9,3 +9,27 @@ SubscriptionToken	Subscription1
 
 Username	Student
 Password	Pa55w.rd
+
+============================================================
+ENDP:https://ai102cswfe.cognitiveservices.azure.com/
+
+KEY1:5b5086b4b93a418fa3535cd7fbbe97da
+KEY2:df71865b606f455a876c7505bf81a46d
+============================================================
+
+
+dotnet add package Microsoft.Azure.CognitiveServices.Vision.ComputerVision --version 6.0.0
+
+pip install azure-cognitiveservices-vision-computervision==0.7.0
+
+dotnet run images/street.jpg
+Program.cs(106,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\C-Sharp\image-analysis\image-analysis.csproj]
+Analyzing images/street.jpg
+Description: a person walking a dog on a sidewalk (confidence: 46.96%)
+Generating thumbnail
+
+
+python image-analysis.py images/street.jpg
+Analyzing images/street.jpg
+Description: 'a person walking a dog on a sidewalk' (confidence: 46.96%)
+Generating thumbnail

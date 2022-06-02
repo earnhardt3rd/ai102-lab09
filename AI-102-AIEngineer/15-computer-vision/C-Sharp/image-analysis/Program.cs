@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
-// Import namespaces
+// import namespaces
+using Microsoft.Azure.CognitiveServices.Vision.ComputerVision;
+using Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models;
 
 
 namespace image_analysis
@@ -34,6 +36,11 @@ namespace image_analysis
 
 
                 // Authenticate Computer Vision client
+                ApiKeyServiceClientCredentials credentials = new ApiKeyServiceClientCredentials(cogSvcKey);
+                cvClient = new ComputerVisionClient(credentials)
+                {
+                    Endpoint = cogSvcEndpoint
+                };
 
 
                 // Analyze image
@@ -55,9 +62,44 @@ namespace image_analysis
             Console.WriteLine($"Analyzing {imageFile}");
 
             // Specify features to be retrieved
+            List<VisualFeatureTypes?> features = new List<VisualFeatureTypes?>()
+            {
+                VisualFeatureTypes.Description,
+                VisualFeatureTypes.Tags,
+                VisualFeatureTypes.Categories,
+                VisualFeatureTypes.Brands,
+                VisualFeatureTypes.Objects,
+                VisualFeatureTypes.Adult
+            };
 
 
             // Get image analysis
+            using (var imageData = File.OpenRead(imageFile))
+            {    
+                var analysis = await cvClient.AnalyzeImageInStreamAsync(imageData, features);
+
+                // get image captions
+                foreach (var caption in analysis.Description.Captions)
+                {
+                    Console.WriteLine($"Description: {caption.Text} (confidence: {caption.Confidence.ToString("P")})");
+                }
+
+                // Get image tags
+
+
+                // Get image categories
+
+
+                // Get brands in the image
+
+
+                // Get objects in the image
+
+
+                // Get moderation ratings
+
+
+            }     
                 
         }
 
