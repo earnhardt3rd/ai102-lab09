@@ -279,3 +279,22 @@ pip 20.2.4 from C:\Users\Student\miniconda3\lib\site-packages\pip (python 3.8)
 
 (base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>python --version
 Python 3.8.5
+
+C:\lab\ai102-lab09>az --version
+azure-cli                         2.17.1 *
+
+core                              2.17.1 *
+telemetry                          1.0.6
+
+Python location 'C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\python.exe'
+Extensions directory 'C:\Users\Student\.azure\cliextensions'
+
+Python (Windows) 3.6.8 (tags/v3.6.8:3c6b436a57, Dec 23 2018, 23:31:17) [MSC v.1916 32 bit (Intel)]
+
+Legal docs and information: aka.ms/AzureCliLegal
+
+
+You have 2 updates available. Consider updating your CLI installation with 'az upgrade'
+
+Please let us know how we are doing: https://aka.ms/azureclihats
+and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
