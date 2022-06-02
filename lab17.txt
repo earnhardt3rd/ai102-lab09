@@ -12,3 +12,13 @@ Username	Student
 Password	Pa55w.rd
 
 =====================================================================================
+ai102cvisionwfe
+ENDP:https://ai102cvisionwfe.cognitiveservices.azure.com/
+KEY1:b7f96fd9e4564cceb9b9bac913aff359
+KEY2:28d75ccbc8e043feba772f9e2ccfd0ba
+
+ai102cvisionwfe-Prediction
+ENDP:https://ai102cvisionwfe-prediction.cognitiveservices.azure.com/
+KEY1:c849e71808754cd8b0610df16ee25ae1
+KEY2:0c0e02790bfe459da4db43e1202bf09d
+
