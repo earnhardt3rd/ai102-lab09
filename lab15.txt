@@ -33,3 +33,28 @@ python image-analysis.py images/street.jpg
 Analyzing images/street.jpg
 Description: 'a person walking a dog on a sidewalk' (confidence: 46.96%)
 Generating thumbnail
+
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\C-Sharp\image-analysis>dotnet run images/building.jpg
+Analyzing images/building.jpg
+Description: a large white building with a dome with United States Capitol in the background (confidence: 41.54%)
+Generating thumbnail
+
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\Python\image-analysis>python image-analysis.py images/building.jpg
+Analyzing images/building.jpg
+Description: 'a large white building with a dome with United States Capitol in the background' (confidence: 41.54%)
+Generating thumbnail
+
+
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\C-Sharp\image-analysis>dotnet run images/person.jpg
+Analyzing images/person.jpg
+Description: Satya Nadella speaking into a microphone (confidence: 48.54%)
+Generating thumbnail
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\Python\image-analysis>python image-analysis.py images/person.jpg
+Analyzing images/person.jpg
+Description: 'Satya Nadella speaking into a microphone' (confidence: 48.54%)
+Generating thumbnail
+
