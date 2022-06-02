@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "NU0tiUpES1ywvWBsnbdEMxOh21ozHoCeyWi+9+BTbUpD7plkgDgzeRV05vS1TiT2l1liJE9fJ0sax5xek7jvWw==",
+  "dgSpecHash": "+61vASFjwMxKzOc7qKZNcHvF1jxITF3TaZ67zHiniBsYHEUyYsPuFPk5h4kp3lt6YnR30Rq83f6sCtBDEuJdhQ==",
   "success": true,
-  "projectFilePath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\test-classifier.csproj",
+  "projectFilePath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\train-classifier.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Student\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.customvision.prediction\\2.0.0\\microsoft.azure.cognitiveservices.vision.customvision.prediction.2.0.0.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.customvision.training\\2.0.0\\microsoft.azure.cognitiveservices.vision.customvision.training.2.0.0.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.9\\microsoft.extensions.configuration.3.1.9.nupkg.sha512",

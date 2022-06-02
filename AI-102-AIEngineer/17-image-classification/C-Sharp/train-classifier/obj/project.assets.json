@@ -2,21 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
-          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
-          "Newtonsoft.Json": "10.0.3",
-          "System.Net.Http": "4.3.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
-        }
-      },
       "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1548,23 +1533,6 @@
     }
   },
   "libraries": {
-    "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0": {
-      "sha512": "QK2OPnxxQE4yI5WAulp69QNnbjBQGOH+HesEdN0NqP3Zqvam+dnqVTHyVmRWZSW78NM/H9OXqE79r+qncBBr3w==",
-      "type": "package",
-      "path": "microsoft.azure.cognitiveservices.vision.customvision.prediction/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "lib/net452/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
-        "lib/net461/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
-        "lib/netstandard1.4/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
-        "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
-        "microsoft.azure.cognitiveservices.vision.customvision.prediction.2.0.0.nupkg.sha512",
-        "microsoft.azure.cognitiveservices.vision.customvision.prediction.nuspec",
-        "pkgicon.png"
-      ]
-    },
     "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training/2.0.0": {
       "sha512": "lUgoPt47NNtd3QgakSA2wJ4+qRTvA7Wz4DNuV3pk5zwHi0VclFW6u0sqGARhIHzn+5cxHY+OJhhkgVJoqP/KhQ==",
       "type": "package",
@@ -5510,7 +5478,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction >= 2.0.0",
       "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training >= 2.0.0",
       "Microsoft.Extensions.Configuration.Json >= 3.1.9"
     ]
@@ -5521,11 +5488,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\test-classifier.csproj",
-      "projectName": "test-classifier",
-      "projectPath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\test-classifier.csproj",
+      "projectUniqueName": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\train-classifier.csproj",
+      "projectName": "train-classifier",
+      "projectPath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\train-classifier.csproj",
       "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\obj\\",
+      "outputPath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5550,10 +5517,6 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
-          "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction": {
-            "target": "Package",
-            "version": "[2.0.0, )"
-          },
           "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training": {
             "target": "Package",
             "version": "[2.0.0, )"

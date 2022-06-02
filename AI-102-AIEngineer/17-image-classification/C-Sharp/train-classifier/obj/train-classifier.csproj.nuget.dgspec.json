@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\test-classifier.csproj": {}
+    "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\train-classifier.csproj": {}
   },
   "projects": {
-    "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\test-classifier.csproj": {
+    "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\train-classifier.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\test-classifier.csproj",
-        "projectName": "test-classifier",
-        "projectPath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\test-classifier.csproj",
+        "projectUniqueName": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\train-classifier.csproj",
+        "projectName": "train-classifier",
+        "projectPath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\train-classifier.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\test-classifier\\obj\\",
+        "outputPath": "C:\\lab\\ai102-lab09\\AI-102-AIEngineer\\17-image-classification\\C-Sharp\\train-classifier\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -36,10 +36,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
             "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training": {
               "target": "Package",
               "version": "[2.0.0, )"
