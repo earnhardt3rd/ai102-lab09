@@ -27,26 +27,19 @@ ai102cvisionwfe
 Subscription:  102T00 CSR 2
 Resource Group:  ResourceGroup1lod23833655
 Resource Kind:  Custom Vision Training
-Key:
-b7f96fd9e4564cceb9b9bac913aff359
-Endpoint:
-https://ai102cvisionwfe.cognitiveservices.azure.com/
-Resource Id:
-/subscriptions/ddf2b252-39ba-411f-b795-f668ab0ffca8/resourceGroups/ResourceGroup1lod23833655/providers/Microsoft.CognitiveServices/accounts/ai102cvisionwfe
+Key: b7f96fd9e4564cceb9b9bac913aff359
+Endpoint: https://ai102cvisionwfe.cognitiveservices.azure.com/
+Resource Id: /subscriptions/ddf2b252-39ba-411f-b795-f668ab0ffca8/resourceGroups/ResourceGroup1lod23833655/providers/Microsoft.CognitiveServices/accounts/ai102cvisionwfe
 Pricing Tier:  F0
 
 Project Settings
 General
-Project Name
-Classify Fruit
-Project Id
-37e7ae99-96f8-4ace-82fe-9da5a16bf096
-Description
-Image classification for fruit
-Usage:
-45 training images uploaded; 4955 remain
-3 tags created; 47 remain
-1 iterations saved; 19 remain
+Project Name: Classify Fruit
+Project Id: 37e7ae99-96f8-4ace-82fe-9da5a16bf096
+Description: Image classification for fruit
+Usage: 45 training images uploaded; 4955 remain
+        3 tags created; 47 remain
+        1 iterations saved; 19 remain
 Domains:
 General [A2]
 General [A1]
@@ -70,3 +63,41 @@ Multiclass (Single tag per image)
 
 dotnet add package Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training --version 2.0.0
 pip install azure-cognitiveservices-vision-customvision==3.1.0
+
+====================================================================================
+C:\lab\ai102-lab09\AI-102-AIEngineer\17-image-classification\C-Sharp\train-classifier>dotnet run
+Uploading images...
+apple..
+banana..
+orange..
+Training....................................................
+Model trained
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\17-image-classification\Python\train-classifier>python train-classifier.py
+Uploading images...
+apple
+banana
+orange
+Training ...
+Nothing changed since last training
+
+
+================================================================================
+*** HAD TO PUBLISH MODEL BEFORE CLIENT COULD BE USED ***
+================================================================================
+C:\lab\ai102-lab09\AI-102-AIEngineer\17-image-classification\C-Sharp\test-classifier>dotnet run
+test-images\IMG_TEST_1.jpg: Error: Operation returned an invalid status code 'NotFound'
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\17-image-classification\C-Sharp\test-classifier>dotnet run
+test-images\IMG_TEST_1.jpg: apple (99.5%)
+test-images\IMG_TEST_2.jpg: banana (100.0%)
+test-images\IMG_TEST_3.jpg: orange (99.8%)
+
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\17-image-classification\Python\test-classifier>PYTHON test-classifier.py
+Invalid iteration
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\17-image-classification\Python\test-classifier>PYTHON test-classifier.py
+IMG_TEST_1.jpg : apple (100%)
+IMG_TEST_2.jpg : banana (100%)
+IMG_TEST_3.jpg : orange (100%)
