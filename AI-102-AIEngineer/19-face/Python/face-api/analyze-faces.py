@@ -157,7 +157,39 @@ def CompareFaces(image_1, image_2):
 
 def TrainModel(group_id, group_name, image_folders):
     print('Creating model for', group_id)
+    # Delete group if it already exists
+    groups = face_client.person_group.list()
+    for group in groups:
+        if group.person_group_id == group_id:
+            face_client.person_group.delete(group_id)
 
+    # Create the group
+    face_client.person_group.create(group_id, group_name)
+    print ('Group created!')
+
+    # Add each person to the group
+    print('Adding people to the group...')
+    for person_name in image_folders:
+        # Add the person
+        person = face_client.person_group_person.create(group_id, person_name)
+
+        # Add multiple photo's of the person
+        folder = os.path.join('images', person_name)
+        person_pics = os.listdir(folder)
+        for pic in person_pics:
+            img_path = os.path.join(folder, pic)
+            img_stream = open(img_path, "rb")
+            face_client.person_group_person.add_face_from_stream(group_id, person.person_id, img_stream)
+
+    # Train the model
+    print('Training model...')
+    face_client.person_group.train(group_id)
+
+    # Get the list of people in the group
+    print('Facial recognition model trained with the following people:')
+    people = face_client.person_group_person.list(group_id)
+    for person in people:
+        print('-', person.name)
 
 
 def RecognizeFaces(image_file, group_id):

@@ -201,7 +201,50 @@ namespace analyze_faces
         static async Task TrainModel(string groupId, string groupName, List<string> imageFolders)
         {
             Console.WriteLine($"Creating model for {groupId}");
+            // Delete group if it already exists
+            var groups = await faceClient.PersonGroup.ListAsync();
+            foreach(var group in groups)
+            {
+                if (group.PersonGroupId == groupId)
+                {
+                    await faceClient.PersonGroup.DeleteAsync(groupId);
+                }
+            }
 
+            // Create the group
+            await faceClient.PersonGroup.CreateAsync(groupId, groupName);
+            Console.WriteLine("Group created!");
+
+            // Add each person to the group
+            Console.Write("Adding people to the group...");
+            foreach(var personName in imageFolders)
+            {
+                // Add the person
+                var person = await faceClient.PersonGroupPerson.CreateAsync(groupId, personName);
+
+                // Add multiple photo's of the person
+                string[] images = Directory.GetFiles("images/" + personName);
+                foreach(var image in images)
+                {
+                    using (var imageData = File.OpenRead(image))
+                    { 
+                        await faceClient.PersonGroupPerson.AddFaceFromStreamAsync(groupId, person.PersonId, imageData);
+                    }
+                }
+
+            }
+
+                // Train the model
+            Console.WriteLine("Training model...");
+            await faceClient.PersonGroup.TrainAsync(groupId);
+
+            // Get the list of people in the group
+            Console.WriteLine("Facial recognition model trained with the following people:");
+            var people = await faceClient.PersonGroupPerson.ListAsync(groupId);
+            foreach(var person in people)
+            {
+                Console.WriteLine($"-{person.Name}");
+            }
 
 
         }
