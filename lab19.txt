@@ -271,3 +271,11 @@ Got Errors
 FROM LAB:
 (base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api>dotnet --version
 3.1.404
+
+
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>pip --version
+pip 20.2.4 from C:\Users\Student\miniconda3\lib\site-packages\pip (python 3.8)
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>python --version
+Python 3.8.5
