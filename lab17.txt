@@ -22,3 +22,51 @@ ENDP:https://ai102cvisionwfe-prediction.cognitiveservices.azure.com/
 KEY1:c849e71808754cd8b0610df16ee25ae1
 KEY2:0c0e02790bfe459da4db43e1202bf09d
 
+-------------------------------------------------------------------------------------
+ai102cvisionwfe
+Subscription:  102T00 CSR 2
+Resource Group:  ResourceGroup1lod23833655
+Resource Kind:  Custom Vision Training
+Key:
+b7f96fd9e4564cceb9b9bac913aff359
+Endpoint:
+https://ai102cvisionwfe.cognitiveservices.azure.com/
+Resource Id:
+/subscriptions/ddf2b252-39ba-411f-b795-f668ab0ffca8/resourceGroups/ResourceGroup1lod23833655/providers/Microsoft.CognitiveServices/accounts/ai102cvisionwfe
+Pricing Tier:  F0
+
+Project Settings
+General
+Project Name
+Classify Fruit
+Project Id
+37e7ae99-96f8-4ace-82fe-9da5a16bf096
+Description
+Image classification for fruit
+Usage:
+45 training images uploaded; 4955 remain
+3 tags created; 47 remain
+1 iterations saved; 19 remain
+Domains:
+General [A2]
+General [A1]
+General
+Food
+Landmarks
+Retail
+General (compact) [S1]
+General (compact)
+Food (compact)
+Landmarks (compact)
+Retail (compact)
+Pick the domain closest to your scenario. Compact domains are lightweight models that can be exported to iOS/Android and other platforms. Learn More
+
+Classification Types:
+Multilabel (Multiple tags per image)
+Multiclass (Single tag per image)
+-------------------------------------------------------------------------------------
+
+=====================================================================================
+
+dotnet add package Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training --version 2.0.0
+pip install azure-cognitiveservices-vision-customvision==3.1.0
