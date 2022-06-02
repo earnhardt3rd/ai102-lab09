@@ -13,3 +13,105 @@ https://www.videoindexer.ai
 https://aka.ms/responsible-ai-videohttps://aka.ms/responsible-ai-video
 
 -- Upload: https://aka.ms/responsible-ai-video
+
+
+
+Share URL:
+https://www.videoindexer.ai/accounts/2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c/videos/371bf2ec40/
+
+
+Embed Insights:
+<iframe width="580" height="780" src="https://www.videoindexer.ai/embed/insights/2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c/371bf2ec40/?accessToken=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiIyZjhkYzg5ZS01N2Q0LTRlOGItYTFmNC1jZTY3YThiNzQ1NmMiLCJWaWRlb0lkIjoiMzcxYmYyZWM0MCIsIlBlcm1pc3Npb24iOiJSZWFkZXIiLCJFeHRlcm5hbFVzZXJJZCI6IjE6bGl2ZS5jb206MDAwMzQwMDE4OEMxQkREQyIsIlVzZXJUeXBlIjoiTWljcm9zb2Z0Q29ycEFhZCIsIklzc3VlckxvY2F0aW9uIjoiVHJpYWwiLCJuYmYiOjE2NTQxODIyNzgsImV4cCI6MTY1NDE4NjE3OCwiaXNzIjoiaHR0cHM6Ly9hcGkudmlkZW9pbmRleGVyLmFpLyIsImF1ZCI6Imh0dHBzOi8vYXBpLnZpZGVvaW5kZXhlci5haS8ifQ.NL-1KNmnu_QWM-giO9WPPwXpJHEjXaT4H86wU4OzoAo&locale=en&location=trial" frameborder="0" allowfullscreen></iframe>
+
+Embed Player: 
+<iframe width="1366" height="768" src="https://www.videoindexer.ai/embed/editor/2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c/371bf2ec40/?accessToken=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiIyZjhkYzg5ZS01N2Q0LTRlOGItYTFmNC1jZTY3YThiNzQ1NmMiLCJQZXJtaXNzaW9uIjoiQ29udHJpYnV0b3IiLCJFeHRlcm5hbFVzZXJJZCI6IjE6bGl2ZS5jb206MDAwMzQwMDE4OEMxQkREQyIsIlVzZXJUeXBlIjoiTWljcm9zb2Z0Q29ycEFhZCIsIklzc3VlckxvY2F0aW9uIjoiVHJpYWwiLCJuYmYiOjE2NTQxODIyNDAsImV4cCI6MTY1NDE4NjE0MCwiaXNzIjoiaHR0cHM6Ly9hcGkudmlkZW9pbmRleGVyLmFpLyIsImF1ZCI6Imh0dHBzOi8vYXBpLnZpZGVvaW5kZXhlci5haS8ifQ.J6_cXCcQsHRl0AqxrU1G-pjjBxGNAZ0KwPsm8w6a5-s&locale=en&location=trial" frameborder="0" allowfullscreen></iframe>
+
+Embed Editor:
+<iframe width="1366" height="768" src="https://www.videoindexer.ai/embed/editor/2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c/371bf2ec40/?accessToken=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiIyZjhkYzg5ZS01N2Q0LTRlOGItYTFmNC1jZTY3YThiNzQ1NmMiLCJQZXJtaXNzaW9uIjoiQ29udHJpYnV0b3IiLCJFeHRlcm5hbFVzZXJJZCI6IjE6bGl2ZS5jb206MDAwMzQwMDE4OEMxQkREQyIsIlVzZXJUeXBlIjoiTWljcm9zb2Z0Q29ycEFhZCIsIklzc3VlckxvY2F0aW9uIjoiVHJpYWwiLCJuYmYiOjE2NTQxODIyNDAsImV4cCI6MTY1NDE4NjE0MCwiaXNzIjoiaHR0cHM6Ly9hcGkudmlkZW9pbmRleGVyLmFpLyIsImF1ZCI6Imh0dHBzOi8vYXBpLnZpZGVvaW5kZXhlci5haS8ifQ.J6_cXCcQsHRl0AqxrU1G-pjjBxGNAZ0KwPsm8w6a5-s&locale=en&location=trial" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+
+
+https://api-portal.videoindexer.ai
+
+
+Picture
+Home
+APIs
+Developer Support
+Profile
+Sign out
+User profile
+Account details
+Email
+frank.earnhardt@outlook.com
+First name
+Frank
+Last name
+Earnhardt
+Registration date
+06/02/2022
+Subscriptions
+Subscription details
+Product
+State
+Action
+Name
+Product Authorization subscription
+Rename
+Started on
+06/02/2022
+Primary key
+2bf55784065f466ea3ba39aa0419a8f9
+Hide | Regenerate
+Secondary key
+43b3ba06b27b421393bc4d7b64d9dff3
+Hide | Regenerate
+Authorization
+
+
+==========================================================
+    
+PS C:\lab\ai102-lab09\AI-102-AIEngineer\16-video-indexer> c:\lab\ai102-lab09\AI-102-AIEngineer\16-video-indexer\get-videos.ps1
+{
+    "results":  [
+                    {
+                        "accountId":  "2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c",
+                        "id":  "371bf2ec40",
+                        "partition":  null,
+                        "externalId":  null,
+                        "metadata":  null,
+                        "name":  "2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c-video1",
+                        "description":  null,
+                        "created":  "2022-06-02T15:09:01.514+00:00",
+                        "lastModified":  "2022-06-02T15:19:23.346+00:00",
+                        "lastIndexed":  "2022-06-02T15:09:09.579+00:00",
+                        "privacyMode":  "Private",
+                        "userName":  "Frank Earnhardt",
+                        "isOwned":  true,
+                        "isBase":  true,
+                        "hasSourceVideoFile":  true,
+                        "state":  "Processed",
+                        "moderationState":  "OK",
+                        "reviewState":  "None",
+                        "processingProgress":  "100%",
+                        "durationInSeconds":  114,
+                        "thumbnailVideoId":  "371bf2ec40",
+                        "thumbnailId":  "e95e65c3-41ac-4f2b-96c2-035a2f19ad25",
+                        "searchMatches":  "",
+                        "indexingPreset":  "Default",
+                        "streamingPreset":  "Default",
+                        "sourceLanguage":  "en-US",
+                        "sourceLanguages":  "en-US",
+                        "personModelId":  "00000000-0000-0000-0000-000000000000"
+                    }
+                ],
+    "nextPage":  {
+                     "pageSize":  25,
+                     "skip":  0,
+                     "done":  true
+                 }
+}
+PS C:\lab\ai102-lab09\AI-102-AIEngineer\16-video-indexer>

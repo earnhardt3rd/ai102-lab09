@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-US" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:01.750" end="00:00:04.886">SPEAKER 1: We believe in the potential of AI to improve our</p>
+
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:04.951" end="00:00:07.891">SPEAKER 1: lives and big and small ways. We need to make</p>
+
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:07.957" end="00:00:10.440">SPEAKER 1: sure it's for the benefit of everyone.</p>
+
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:10.950" end="00:00:14.464">SPEAKER 2: For the first time, we're having machines moved into roles</p>
+
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:14.525" end="00:00:17.736">SPEAKER 2: that have been the roles of human beings. Might these</p>
+
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:17.797" end="00:00:21.917">SPEAKER 2: technologies have inadvertent effects on people and society? Do they</p>
+
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:21.978" end="00:00:25.311">SPEAKER 2: align with people's values, their ethics? We need it to</p>
+
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:25.371" end="00:00:28.220">SPEAKER 2: think through the implications for our company.</p>
+
+      <!-- Confidence: 0.8955763578414917 -->
+      <p begin="00:00:28.950" end="00:00:30.800">SPEAKER 1: Responsible AI is the.</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:30.890" end="00:00:35.398">SPEAKER 1: Approach that we take to developing and deploying our technology,</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:35.467" end="00:00:39.281">SPEAKER 1: making sure our principles are brought to life and that</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:39.351" end="00:00:43.790">SPEAKER 1: it empowers everyone and is inclusive and accessible for people.</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:43.900" end="00:00:44.510">SPEAKER 2: Apple.</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:44.620" end="00:00:47.920">SPEAKER 1: Excellent, the job of the Office of responsible AI is</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:47.983" end="00:00:52.280">SPEAKER 1: to put our principles into practice by operationalising ethics across</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:52.342" end="00:00:53.090">SPEAKER 1: the company.</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:53.170" end="00:00:56.846">SPEAKER 2: The Ethics Committee is responsible for deliberating about hard new</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:56.901" end="00:00:57.450">SPEAKER 2: questions.</p>
+
+      <!-- Confidence: 0.8350234627723694 -->
+      <p begin="00:00:57.460" end="00:00:59.810">SPEAKER 1: We are sister organizations.</p>
+
+      <!-- Confidence: 0.8917409181594849 -->
+      <p begin="00:01:00.890" end="00:01:04.068">SPEAKER 2: We have to think through what it means to detect</p>
+
+      <!-- Confidence: 0.8917409181594849 -->
+      <p begin="00:01:04.135" end="00:01:07.711">SPEAKER 2: bias, make our systems more fair, to detect errors and</p>
+
+      <!-- Confidence: 0.8917409181594849 -->
+      <p begin="00:01:07.777" end="00:01:11.751">SPEAKER 2: blind spots in our technologies, and on thinking through the</p>
+
+      <!-- Confidence: 0.8917409181594849 -->
+      <p begin="00:01:11.817" end="00:01:15.261">SPEAKER 2: kinds of advice we give to other organizations on to</p>
+
+      <!-- Confidence: 0.8917409181594849 -->
+      <p begin="00:01:15.327" end="00:01:19.301">SPEAKER 2: our leaders where technology can impose on privacy and human</p>
+
+      <!-- Confidence: 0.8917409181594849 -->
+      <p begin="00:01:19.367" end="00:01:23.870">SPEAKER 2: rights. Responsibility is at the core world. Learning everyday about</p>
+
+      <!-- Confidence: 0.8917409181594849 -->
+      <p begin="00:01:23.937" end="00:01:26.520">SPEAKER 2: this new role of responsible computing.</p>
+
+      <!-- Confidence: 0.8917409181594849 -->
+      <p begin="00:01:26.690" end="00:01:30.950">SPEAKER 1: We need to translate academic thought to language that.</p>
+
+      <!-- Confidence: 0.8749055862426758 -->
+      <p begin="00:01:31.069" end="00:01:35.698">SPEAKER 1: Engineers and salespeople are familiar with our customers, have grappling</p>
+
+      <!-- Confidence: 0.8749055862426758 -->
+      <p begin="00:01:35.761" end="00:01:38.931">SPEAKER 1: with many of the same issues. It's incumbent on us</p>
+
+      <!-- Confidence: 0.8749055862426758 -->
+      <p begin="00:01:38.995" end="00:01:40.580">SPEAKER 1: to share what we learned.</p>
+
+      <!-- Confidence: 0.8749055862426758 -->
+      <p begin="00:01:41.110" end="00:01:44.095">SPEAKER 2: It's about trying to do better everyday working with our</p>
+
+      <!-- Confidence: 0.8749055862426758 -->
+      <p begin="00:01:44.148" end="00:01:48.147">SPEAKER 2: customers and outside agencies to develop processes and deliver responsible</p>
+
+      <!-- Confidence: 0.8749055862426758 -->
+      <p begin="00:01:48.200" end="00:01:50.119">SPEAKER 2: computing technologies to the world.</p>
+    </div>
+  </body>
+</tt>

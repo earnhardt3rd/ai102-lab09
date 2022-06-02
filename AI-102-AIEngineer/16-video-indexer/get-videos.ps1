@@ -1,5 +1,6 @@
-$account_id="YOUR_ACCOUNT_ID"
-$api_key="YOUR_API_KEY"
+# Account ID was obtained from https://www.videoindexer.ai/account/2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c/settings
+$account_id="2f8dc89e-57d4-4e8b-a1f4-ce67a8b7456c"
+$api_key="2bf55784065f466ea3ba39aa0419a8f9"
 $location="trial"
 
 # Call the AccessToken method with the API key in the header to get an access token
