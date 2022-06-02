@@ -236,3 +236,38 @@ Results saved in recognized_faces.jpg
 
 (base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>
 ----------------------------------------------------------------------------------------
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api>dotnet run
+1: Detect faces
+2: Compare faces
+3: Train a facial recognition model
+4: Recognize faces
+5: Verify a face
+Any other key to quit
+Enter a number:
+5
+Verifying the person in images/person1.jpg is Aisha
+Verified
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api>
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>python analyze-faces.py
+1: Detect faces
+2: Compare faces
+3: Train a facial recognition model
+4: Recognize faces
+5: Verify a face
+Any other key to quit
+Enter a number:5
+Verifying the person in images\person1.jpg is Aisha
+Verified
+
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\Python\face-api>
+
+
+-------------------------------------------------------------------------
+Tried to run from HOME:
+Got Errors
+
+FROM LAB:
+(base) C:\lab\ai102-lab09\AI-102-AIEngineer\19-face\C-Sharp\face-api>dotnet --version
+3.1.404
