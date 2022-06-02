@@ -1,0 +1,11 @@
+
+URL	https://portal.azure.com/#home
+Subscription	5d6fc3d1-03a3-4b58-a7e1-579532ddecde
+Username	User1-23830642@LODSPRODMCA.onmicrosoft.com
+Password	aUmJ2a!2J!
+SubscriptionToken	Subscription1
+
+
+
+Username	Student
+Password	Pa55w.rd
