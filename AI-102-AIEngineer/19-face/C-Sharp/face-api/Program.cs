@@ -322,6 +322,31 @@ namespace analyze_faces
             string result = "Not verified";
 
             // Get the ID of the person from the people group
+            var people = await faceClient.PersonGroupPerson.ListAsync(groupId);
+            foreach(var person in people)
+            {
+                if (person.Name == personName)
+                {
+                    Guid personId = person.PersonId;
+
+                    // Get the first face in the image
+                    using (var imageData = File.OpenRead(personImage))
+                    {    
+                        var faces = await faceClient.Face.DetectWithStreamAsync(imageData);
+                        if (faces.Count > 0)
+                        {
+                            Guid faceId = (Guid)faces[0].FaceId;
+
+                            //We have a face and an ID. Do they match?
+                            var verification = await faceClient.Face.VerifyFaceToPersonAsync(faceId, personId, groupId);
+                            if (verification.IsIdentical)
+                            {
+                                result = "Verified";
+                            }
+                        }
+                    }
+                }
+            }
 
 
             // print the result

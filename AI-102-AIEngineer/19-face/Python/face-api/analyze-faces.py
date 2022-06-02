@@ -247,6 +247,21 @@ def VerifyFace(person_image, person_name, group_id):
     result = "Not verified"
 
     # Get the ID of the person from the people group
+    people = face_client.person_group_person.list(group_id)
+    for person in people:
+        if person.name == person_name:
+            person_id = person.person_id
+
+            # Get the first face in the image
+            with open(person_image, mode="rb") as image_data:
+                faces = face_client.face.detect_with_stream(image=image_data)
+                if len(faces) > 0:
+                    face_id = faces[0].face_id
+
+                    # We have a face and an ID. Do they match?
+                    verification = face_client.face.verify_face_to_person(face_id, person_id, group_id)
+                    if verification.is_identical:
+                        result = 'Verified'
 
                         
     # print the result
