@@ -1,0 +1,13 @@
+Azure Portal
+URL	https://portal.azure.com/#home
+Subscription	6a896cce-709c-4f52-822b-b2c217b209dc
+Username	User1-23835845@LODSPRODMCA.onmicrosoft.com
+Password	B#1e!hB0Dd
+SubscriptionToken	Subscription1
+Resource Group
+ResourceGroup1
+Thumbnail screenshot of virtual machineLab23835845-AI-102
+AI-102
+Username	Student
+Password	Pa55w.rd
+=======================================================================
