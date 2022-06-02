@@ -194,7 +194,51 @@ def TrainModel(group_id, group_name, image_folders):
 
 def RecognizeFaces(image_file, group_id):
     print('Recognizing faces in', image_file)
+    # Detect faces in the image
+    with open(image_file, mode="rb") as image_data:
 
+        # Get faces
+        detected_faces = face_client.face.detect_with_stream(image=image_data)
+
+        # Get a list of face IDs
+        face_ids = list(map(lambda face: face.face_id, detected_faces))
+
+        # Identify the faces in the people group
+        recognized_faces = face_client.face.identify(face_ids, group_id)
+
+        # Get names for recognized faces
+        face_names = {}
+        if len(recognized_faces) > 0:
+            print(len(recognized_faces), 'faces recognized.')
+            for face in recognized_faces:
+                person_name = face_client.person_group_person.get(group_id, face.candidates[0].person_id).name
+                print('-', person_name)
+                face_names[face.face_id] = person_name
+
+        # Annotate faces in image
+        fig = plt.figure(figsize=(8, 6))
+        plt.axis('off')
+        image = Image.open(image_file)
+        draw = ImageDraw.Draw(image)
+        for face in detected_faces:
+            r = face.face_rectangle
+            bounding_box = ((r.left, r.top), (r.left + r.width, r.top + r.height))
+            draw = ImageDraw.Draw(image)
+            if face.face_id in face_names:
+                # If the face is recognized, annotate in green with the name
+                draw.rectangle(bounding_box, outline='lightgreen', width=3)
+                plt.annotate(face_names[face.face_id],
+                            (r.left, r.top + r.height + 15), backgroundcolor='white')
+            else:
+                # Otherwise, just annotate the unrecognized face in magenta
+                draw.rectangle(bounding_box, outline='magenta', width=3)
+
+        # Save annotated image
+        plt.imshow(image)
+        outputfile = 'recognized_faces.jpg'
+        fig.savefig(outputfile)
+
+        print('\nResults saved in', outputfile)
 
 
 def VerifyFace(person_image, person_name, group_id):

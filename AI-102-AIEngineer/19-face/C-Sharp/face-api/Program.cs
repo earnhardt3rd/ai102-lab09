@@ -252,7 +252,66 @@ namespace analyze_faces
         static async Task RecognizeFaces(string imageFile, string groupId)
         {
             Console.WriteLine($"Recognizing faces in {imageFile}");
+            // Detect faces in the image
+            using (var imageData = File.OpenRead(imageFile))
+            {    
+                var detectedFaces = await faceClient.Face.DetectWithStreamAsync(imageData);
 
+                // Get faces
+                if (detectedFaces.Count > 0)
+                {
+
+                    // Get a list of face IDs
+                    var faceIds = detectedFaces.Select(f => f.FaceId).ToList<Guid?>();
+
+                    // Identify the faces in the people group
+                    var recognizedFaces = await faceClient.Face.IdentifyAsync(faceIds, groupId);
+
+                    // Get names for recognized faces
+                    var faceNames = new Dictionary<Guid?, string>();
+                    if (recognizedFaces.Count> 0)
+                    {
+                        foreach(var face in recognizedFaces)
+                        {
+                            var person = await faceClient.PersonGroupPerson.GetAsync(groupId, face.Candidates[0].PersonId);
+                            Console.WriteLine($"-{person.Name}");
+                            faceNames.Add(face.FaceId, person.Name);
+
+                        }
+                    }
+
+
+                    // Annotate faces in image
+                    Image image = Image.FromFile(imageFile);
+                    Graphics graphics = Graphics.FromImage(image);
+                    Pen penYes = new Pen(Color.LightGreen, 3);
+                    Pen penNo = new Pen(Color.Magenta, 3);
+                    Font font = new Font("Arial", 4);
+                    SolidBrush brush = new SolidBrush(Color.Cyan);
+                    foreach (var face in detectedFaces)
+                    {
+                        var r = face.FaceRectangle;
+                        Rectangle rect = new Rectangle(r.Left, r.Top, r.Width, r.Height);
+                        if (faceNames.ContainsKey(face.FaceId))
+                        {
+                            // If the face is recognized, annotate in green with the name
+                            graphics.DrawRectangle(penYes, rect);
+                            string personName = faceNames[face.FaceId];
+                            graphics.DrawString(personName,font,brush,r.Left, r.Top);
+                        }
+                        else
+                        {
+                            // Otherwise, just annotate the unrecognized face in magenta
+                            graphics.DrawRectangle(penNo, rect);
+                        }
+                    }
+
+                    // Save annotated image
+                    String output_file = "recognized_faces.jpg";
+                    image.Save(output_file);
+                    Console.WriteLine("Results saved in " + output_file);   
+                }
+            }
         
         }
 
