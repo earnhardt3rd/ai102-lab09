@@ -58,3 +58,124 @@ Analyzing images/person.jpg
 Description: 'Satya Nadella speaking into a microphone' (confidence: 48.54%)
 Generating thumbnail
 
+===========================================================================================
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\C-Sharp\image-analysis>dotnet run images/street.jpg   
+Program.cs(114,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\C-Sharp\image-analysis\image-analysis.csproj]
+Analyzing images/street.jpg
+Description: a person walking a dog on a sidewalk (confidence: 46.96%)
+Tags:
+ -outdoor (confidence: 99.98%)
+ -road (confidence: 99.98%)
+ -building (confidence: 99.92%)
+ -street (confidence: 99.53%)
+ -land vehicle (confidence: 93.68%)
+ -way (confidence: 93.67%)
+ -dog (confidence: 93.55%)
+ -vehicle (confidence: 92.56%)
+ -car (confidence: 91.38%)
+ -sidewalk (confidence: 87.51%)
+ -city (confidence: 86.10%)
+ -wheel (confidence: 69.87%)
+ -people (confidence: 65.72%)
+ -yellow (confidence: 64.94%)
+ -carnivore (confidence: 63.83%)
+ -taxi (confidence: 60.63%)
+ -busy (confidence: 30.32%)
+ -curb (confidence: 7.65%)
+Generating thumbnail
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\Python\image-analysis>python image-analysis.py images/street.jpg
+Analyzing images/street.jpg
+Description: 'a person walking a dog on a sidewalk' (confidence: 46.96%)
+Tags:
+ -'outdoor' (confidence: 99.98%)
+ -'road' (confidence: 99.98%)
+ -'building' (confidence: 99.92%)
+ -'street' (confidence: 99.53%)
+ -'land vehicle' (confidence: 93.68%)
+ -'way' (confidence: 93.67%)
+ -'dog' (confidence: 93.55%)
+ -'vehicle' (confidence: 92.56%)
+ -'car' (confidence: 91.38%)
+ -'sidewalk' (confidence: 87.51%)
+ -'city' (confidence: 86.10%)
+ -'wheel' (confidence: 69.87%)
+ -'people' (confidence: 65.72%)
+ -'yellow' (confidence: 64.94%)
+ -'carnivore' (confidence: 63.83%)
+ -'taxi' (confidence: 60.63%)
+ -'busy' (confidence: 30.32%)
+ -'curb' (confidence: 7.65%)
+Generating thumbnail
+
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\C-Sharp\image-analysis>dotnet run images/building.jpg
+Analyzing images/building.jpg
+Description: a large white building with a dome with United States Capitol in the background (confidence: 41.54%)
+Tags:
+ -grass (confidence: 100.00%)
+ -sky (confidence: 99.99%)
+ -outdoor (confidence: 99.92%)
+ -cloud (confidence: 91.18%)
+ -building (confidence: 90.52%)
+ -field (confidence: 85.57%)
+ -tree (confidence: 83.43%)
+ -park (confidence: 66.53%)
+ -government building (confidence: 54.93%)
+ -grassy (confidence: 44.36%)
+ -cloudy (confidence: 33.88%)
+ -day (confidence: 33.67%)
+Generating thumbnail
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\Python\image-analysis>python image-analysis.py images/building.jpg
+Analyzing images/building.jpg
+Description: 'a large white building with a dome with United States Capitol in the background' (confidence: 41.54%)
+Tags:
+ -'grass' (confidence: 100.00%)
+ -'sky' (confidence: 99.99%)
+ -'outdoor' (confidence: 99.92%)
+ -'cloud' (confidence: 91.18%)
+ -'building' (confidence: 90.52%)
+ -'field' (confidence: 85.57%)
+ -'tree' (confidence: 83.43%)
+ -'park' (confidence: 66.53%)
+ -'government building' (confidence: 54.93%)
+ -'grassy' (confidence: 44.36%)
+ -'cloudy' (confidence: 33.88%)
+ -'day' (confidence: 33.67%)
+Generating thumbnail
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\C-Sharp\image-analysis>dotnet run images/person.jpg
+Analyzing images/person.jpg
+Description: Satya Nadella speaking into a microphone (confidence: 48.54%)
+Tags:
+ -person (confidence: 99.95%)
+ -clothing (confidence: 98.07%)
+ -man (confidence: 96.69%)
+ -human face (confidence: 96.59%)
+ -outdoor (confidence: 90.11%)
+ -shirt (confidence: 63.80%)
+ -glasses (confidence: 63.04%)
+ -tie (confidence: 55.69%)
+ -suit (confidence: 53.09%)
+ -hand (confidence: 46.87%)
+Generating thumbnail
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\15-computer-vision\Python\image-analysis>python image-analysis.py images/person.jpg
+Analyzing images/person.jpg
+Description: 'Satya Nadella speaking into a microphone' (confidence: 48.54%)
+Tags: 
+ -'person' (confidence: 99.95%)
+ -'clothing' (confidence: 98.07%)
+ -'man' (confidence: 96.69%)
+ -'human face' (confidence: 96.59%)
+ -'outdoor' (confidence: 90.11%)
+ -'shirt' (confidence: 63.80%)
+ -'glasses' (confidence: 63.04%)
+ -'tie' (confidence: 55.69%)
+ -'suit' (confidence: 53.09%)
+ -'hand' (confidence: 46.87%)
+Generating thumbnail
+
+========================================================================================================
+

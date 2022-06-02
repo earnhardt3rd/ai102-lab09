@@ -62,6 +62,10 @@ def AnalyzeImage(image_file):
         print("Description: '{}' (confidence: {:.2f}%)".format(caption.text, caption.confidence * 100))
 
     # Get image tags
+    if (len(analysis.tags) > 0):
+        print("Tags: ")
+        for tag in analysis.tags:
+            print(" -'{}' (confidence: {:.2f}%)".format(tag.name, tag.confidence * 100))
 
 
     # Get image categories 

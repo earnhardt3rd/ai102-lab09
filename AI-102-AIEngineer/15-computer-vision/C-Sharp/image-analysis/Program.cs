@@ -85,6 +85,14 @@ namespace image_analysis
                 }
 
                 // Get image tags
+                if (analysis.Tags.Count > 0)
+                {
+                    Console.WriteLine("Tags:");
+                    foreach (var tag in analysis.Tags)
+                    {
+                        Console.WriteLine($" -{tag.Name} (confidence: {tag.Confidence.ToString("P")})");
+                    }
+                }
 
 
                 // Get image categories
