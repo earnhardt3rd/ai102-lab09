@@ -24,3 +24,5 @@ C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\C-Sharp\test-model\obj\Debug
 C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\C-Sharp\test-model\obj\Debug\netcoreapp3.1\test-model.dll
 C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\C-Sharp\test-model\obj\Debug\netcoreapp3.1\test-model.pdb
 C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\C-Sharp\test-model\obj\Debug\netcoreapp3.1\test-model.genruntimeconfig.cache
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\C-Sharp\test-model\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\C-Sharp\test-model\bin\Debug\netcoreapp3.1\Tabulate.NET.dll
