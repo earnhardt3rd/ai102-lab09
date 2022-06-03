@@ -1,0 +1,28 @@
+Azure Portal
+URL	https://portal.azure.com/#home
+Subscription	1da484aa-d607-46ea-80bc-d0493a2d04d8
+Username	User1-23847889@cloudslice.onmicrosoft.com
+Password	pNqG5k$7H*
+SubscriptionToken	Subscription1
+Resource Group
+ResourceGroup1lod23847889
+Thumbnail screenshot of virtual machineLab23847889-AI-102
+AI-102
+Username	Student
+Password	Pa55w.rd
+===========================================================================================
+ENDP:https://ai102frwfe.cognitiveservices.azure.com/
+KEY1:20baa3d14b9044b79dcfda5ce939a519
+KEY2:0a4525af34144501803b38067fe19093
+===========================================================================================
+ResourceGroup:ResourceGroup1lod23847889
+SubscriptionID:1da484aa-d607-46ea-80bc-d0493a2d04d8
+Location:East US
+-------------------------------------------------------------------------------------------
+How were sample-forms/files generated?
+
+-------------------------------------------------------------------------------------------
+az login --output none
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form>az account list-locations -o table > azLocations.txt
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form>findstr /C:"East US" azLocations.txt
+East US                   eastus               (US) East US
