@@ -26,3 +26,34 @@ az login --output none
 C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form>az account list-locations -o table > azLocations.txt
 C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form>findstr /C:"East US" azLocations.txt
 East US                   eastus               (US) East US
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form>setup
+Creating storage...
+Uploading files...
+Finished[#############################################################]  100.0000%
+-------------------------------------------------------------------------------------------
+SAS URI: https://ai102form2591319196.blob.core.windows.net/sampleforms?se=2023-01-01T00%3A00%3A00Z&sp=rwl&sv=2018-11-09&sr=c&sig=dYdEkU4TrvS4Ki5bX51m2eNbPJzb7iLDZZK4/%2BLVC/A%3D
+-------------------------------------------------------------------------------------------
+dotnet add package Azure.AI.FormRecognizer --version 3.0.0 
+
+pip install azure-ai-formrecognizer==3.0.0
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\C-Sharp\train-model>dotnet run
+Custom Model Info:
+    Model Id: 29285173-1e0d-42d4-bf43-95bebe49ed56
+    Model Status: Ready
+    Training model started on: 6/3/2022 1:40:18 PM +00:00
+    Training model completed on: 6/3/2022 1:40:20 PM +00:00
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\C-Sharp\train-model>
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\Python\train-model>python train-model.py
+Model ID: 742c8b4e-0a00-49a0-b1a8-2f203092392c
+Status: ready
+Training started on: 2022-06-03 13:40:51+00:00
+Training completed on: 2022-06-03 13:40:52+00:00
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\21-custom-form\Python\train-model>
+-------------------------------------------------------------------------------------------
+
+
