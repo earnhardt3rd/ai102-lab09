@@ -1,7 +1,9 @@
 from dotenv import load_dotenv
 import os
 
-# Import namespaces
+# import namespaces
+from azure.core.credentials import AzureKeyCredential
+from azure.ai.textanalytics import TextAnalyticsClient
 
 
 def main():
@@ -12,6 +14,8 @@ def main():
         cog_key = os.getenv('COG_SERVICE_KEY')
 
         # Create client using endpoint and key
+        credential = AzureKeyCredential(cog_key)
+        cog_client = TextAnalyticsClient(endpoint=cog_endpoint, credential=credential)
 
 
         # Analyze each text file in the reviews folder
