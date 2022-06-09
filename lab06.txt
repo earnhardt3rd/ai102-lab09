@@ -1,0 +1,25 @@
+Azure Portal
+URL	https://portal.azure.com/#home
+Subscription	a592aaee-f910-41c6-b1ae-a7f4b6b439dd
+Username	User1-23974092@LODSPRODMCA.onmicrosoft.com
+Password	Sr0Je2!!Da
+SubscriptionToken	Subscription1
+Resource Group
+ResourceGroup1
+Thumbnail screenshot of virtual machineLab23974092-AI-102
+AI-102
+Username	Student
+Password	Pa55w.rd
+
+
+
+========================================================================================
+
+KEY1:9a4e6395be024b7686a410d3115fa56e
+KEY2:1d6e3ada1f0345a5b7b33ba2ee2db8f1
+
+ENDP:https://ai102-cswfe2.cognitiveservices.azure.com/
+
+
+
+
