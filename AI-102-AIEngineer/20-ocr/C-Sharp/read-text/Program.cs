@@ -7,7 +7,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
-// Import namespaces
+// import namespaces
+using Microsoft.Azure.CognitiveServices.Vision.ComputerVision;
+using Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models;
 
 
 namespace read_text
@@ -27,6 +29,11 @@ namespace read_text
                 string cogSvcKey = configuration["CognitiveServiceKey"];
 
                 // Authenticate Computer Vision client
+                ApiKeyServiceClientCredentials credentials = new ApiKeyServiceClientCredentials(cogSvcKey);
+                cvClient = new ComputerVisionClient(credentials)
+                {
+                    Endpoint = cogSvcEndpoint
+                };
                 
 
 
@@ -63,7 +70,40 @@ namespace read_text
         static async Task GetTextOcr(string imageFile)
         {
             Console.WriteLine($"Reading text in {imageFile}\n");
+            // Use OCR API to read text in image
+            using (var imageData = File.OpenRead(imageFile))
+            {    
+                var ocrResults = await cvClient.RecognizePrintedTextInStreamAsync(detectOrientation:false, image:imageData);
 
+                // Prepare image for drawing
+                Image image = Image.FromFile(imageFile);
+                Graphics graphics = Graphics.FromImage(image);
+                Pen pen = new Pen(Color.Magenta, 3);
+
+                foreach(var region in ocrResults.Regions)
+                {
+                    foreach(var line in region.Lines)
+                    {
+                        // Show the position of the line of text
+                        int[] dims = line.BoundingBox.Split(",").Select(int.Parse).ToArray();
+                        Rectangle rect = new Rectangle(dims[0], dims[1], dims[2], dims[3]);
+                        graphics.DrawRectangle(pen, rect);
+
+                        // Read the words in the line of text
+                        string lineText = "";
+                        foreach(var word in line.Words)
+                        {
+                            lineText += word.Text + " ";
+                        }
+                        Console.WriteLine(lineText.Trim());
+                    }
+                }
+
+                // Save the image with the text locations highlighted
+                String output_file = "ocr_results.jpg";
+                image.Save(output_file);
+                Console.WriteLine("Results saved in " + output_file);
+            }
                 
         }
 
