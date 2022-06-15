@@ -1,3 +1,5 @@
+//https://social.technet.microsoft.com/wiki/contents/articles/51897.cognitive-services-extract-handwritten-text-from-an-image-using-computer-vision-api-with-asp-net-core-and-c.aspx
+
 using HandwrittenTextApp.Business_Layer.Interface;
 using HandwrittenTextApp.Models;
 using Newtonsoft.Json;
