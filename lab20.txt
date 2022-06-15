@@ -31,3 +31,81 @@ dotnet add package Microsoft.Azure.CognitiveServices.Vision.ComputerVision --ver
 
 pip install azure-cognitiveservices-vision-computervision==0.7.0
 
+C:\lab\ai102-lab09\AI-102-AIEngineer\20-ocr\Python\read-text>python read-text.py
+1: Use OCR API
+2: Use Read API
+3: Read handwriting
+Any other key to quit
+Enter a number:1
+Reading text in images\Lincoln.jpg
+
+IN THIS TEMPLE
+AS IN THE HEARTS OF THE PEOPLE
+FOR WHOM HE SAVED THE UNION
+THE MEMORY OF ABRAHAM LINCOLN
+IS ENSHRINED FOREVER
+Results saved in ocr_results.jpg
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\20-ocr\Python\read-text>python read-text.py
+1: Use OCR API       
+2: Use Read API      
+3: Read handwriting  
+Any other key to quit
+Enter a number:2
+Reading text in images\Rome.pdf
+
+Margie’s Travel presents…
+Rome
+The historic center of the city is a UNESCO World
+Heritage Site. With wonderful palaces, thousand-year-old
+churches, grand Romantic ruins, opulent monuments,
+ornate statues and graceful fountains, Rome has an
+immensely rich historical heritage and cosmopolitan
+atmosphere, making it one of Europe's and the world's
+most visited, famous, influential, and beautiful capitals.
+Today, Rome has a growing nightlife scene and is also
+seen as a shopping heaven, being regarded as one of
+the fashion capitals of the world.
+Mostly popular for:
+Family & Kids, Arts & Culture, Historical, Leisure,
+Outdoors
+Best time to visit:
+Jun-Sep · Avg. 1.9 in precip · Avg. H 83°F · L 66°F
+Book your trip now at www.margiestravel.com
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\20-ocr\Python\read-text>python read-text.py
+1: Use OCR API
+2: Use Read API
+3: Read handwriting
+Any other key to quit
+Enter a number:3
+Reading text in images\Note.jpg
+
+Shopping List
+Non-Fat milk
+Bread
+Eggs
+
+C:\lab\ai102-lab09\AI-102-AIEngineer\20-ocr\Python\read-text>python read-text.py
+
+Enter a number:
+2
+Reading text in images/roster.jpg
+
+NAME
+GRADE
+CLASS
+JOE Good
+A 2- 102
+FRED BAD
+10
+102- A2
+SUE May
+LL
+SUMMER
+Do
+TED gone
+Lost Boys
+
+
+

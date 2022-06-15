@@ -1,0 +1,23 @@
+C:\lab\ai102-lab09\AI-102-AIEngineer\20-ocr\C-Sharp\read-text>dotnet run
+1: Use OCR API       
+2: Use Read API      
+3: Read handwriting  
+Any other key to quit
+Enter a number:
+3
+Reading text in images/roster.jpg
+
+NAME
+GRADE
+CLASS
+JOE Good
+A 2- 102
+FRED BAD
+10
+102- A2
+SUE May
+LL
+SUMMER
+Do
+TED gone
+Lost Boys

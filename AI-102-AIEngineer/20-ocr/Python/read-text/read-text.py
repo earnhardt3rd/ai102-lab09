@@ -79,7 +79,26 @@ def GetTextOcr(image_file):
 
 def GetTextRead(image_file):
     print('Reading text in {}\n'.format(image_file))
+    # Use Read API to read text in image
+    with open(image_file, mode="rb") as image_data:
+        read_op = cv_client.read_in_stream(image_data, raw=True)
 
+        # Get the async operation ID so we can check for the results
+        operation_location = read_op.headers["Operation-Location"]
+        operation_id = operation_location.split("/")[-1]
+
+        # Wait for the asynchronous operation to complete
+        while True:
+            read_results = cv_client.get_read_result(operation_id)
+            if read_results.status not in [OperationStatusCodes.running, OperationStatusCodes.not_started]:
+                break
+            time.sleep(1)
+
+        # If the operation was successfuly, process the text line by line
+        if read_results.status == OperationStatusCodes.succeeded:
+            for page in read_results.analyze_result.read_results:
+                for line in page.lines:
+                    print(line.text)
 
 
 

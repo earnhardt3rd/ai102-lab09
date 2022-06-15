@@ -46,14 +46,19 @@ namespace read_text
                 {
                     case "1":
                         imageFile = "images/Lincoln.jpg";
+                        //imageFile = "images/roster.jpg";
                         await GetTextOcr(imageFile);
                         break;
                     case "2":
                         imageFile = "images/Rome.pdf";
+                        imageFile = "images/roster.jpg";
+                        imageFile = "images/mac.jpg";
                         await GetTextRead(imageFile);
                         break;
                     case "3":
                         imageFile = "images/Note.jpg";
+                        imageFile = "images/roster.jpg";
+                        imageFile = "images/mac.jpg";
                         await GetTextRead(imageFile);
                         break;
                     default:
@@ -100,7 +105,7 @@ namespace read_text
                 }
 
                 // Save the image with the text locations highlighted
-                String output_file = "ocr_results.jpg";
+                String output_file = "ocr_results-" + imageFile + ".jpg";
                 image.Save(output_file);
                 Console.WriteLine("Results saved in " + output_file);
             }
@@ -110,7 +115,38 @@ namespace read_text
         static async Task GetTextRead(string imageFile)
         {
             Console.WriteLine($"Reading text in {imageFile}\n");
+            // Use Read API to read text in image
+            using (var imageData = File.OpenRead(imageFile))
+            {    
+                var readOp = await cvClient.ReadInStreamAsync(imageData);
 
+                // Get the async operation ID so we can check for the results
+                string operationLocation = readOp.OperationLocation;
+                string operationId = operationLocation.Substring(operationLocation.Length - 36);
+
+                // Wait for the asynchronous operation to complete
+                ReadOperationResult results;
+                do
+                {
+                    Thread.Sleep(1000);
+                    results = await cvClient.GetReadResultAsync(Guid.Parse(operationId));
+                }
+                while ((results.Status == OperationStatusCodes.Running ||
+                        results.Status == OperationStatusCodes.NotStarted));
+
+                // If the operation was successfuly, process the text line by line
+                if (results.Status == OperationStatusCodes.Succeeded)
+                {
+                    var textUrlFileResults = results.AnalyzeResult.ReadResults;
+                    foreach (ReadResult page in textUrlFileResults)
+                    {
+                        foreach (Line line in page.Lines)
+                        {
+                            Console.WriteLine(line.Text);
+                        }
+                    }
+                }
+            }  
      
         }
     }

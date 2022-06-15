@@ -1,0 +1,16 @@
+C:\lab\ai102-lab09\AI-102-AIEngineer\20-ocr\C-Sharp\read-text>dotnet run
+1: Use OCR API
+2: Use Read API
+3: Read handwriting
+Any other key to quit
+Enter a number:
+3
+Reading text in images/mac.jpg
+
+C . CO/DVD JUSB
+D ~ Diagnostics
+N - Net boot
+JB-R ~ Recovery
+88-P-R - RESE NURAM
+883 ~ single User
+- Target Disk
