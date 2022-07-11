@@ -1,0 +1,12 @@
+URL	https://portal.azure.com/#home
+Subscription	1e57d8a8-182c-4fa9-8996-79db1a61084e
+Username	User1-24515355@LODSPRODMCA.onmicrosoft.com
+Password	c!DeeCD30@
+SubscriptionToken	Subscription1
+Resource Group
+ResourceGroup1
+Thumbnail screenshot of virtual machineLab24515355-AI-102
+AI-102
+Username	Student
+Password	Pa55w.rd
+==================================================================================
